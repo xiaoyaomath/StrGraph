@@ -1,21 +1,17 @@
-// OperationFactory.cpp
 #include "OperationFactory.h"
-#include "Operation.h"
-#include "OperationRegistry.h"
+#include "Node.h"
 
-std::shared_ptr<Operation> OperationFactory::createOperation(
-    const std::string& name,
-    const std::vector<std::shared_ptr<Node>>& inputs,
-    const std::function<std::string(const std::vector<std::shared_ptr<Node>>&)> func) {
+// 静态成员的初始化
+std::unordered_map<std::string, std::function<std::string(const Node&, const std::vector<std::string>&)>> OperationFactory::registry_;
 
-    std::function<std::string(const std::vector<std::shared_ptr<Node>>&)> opFunc = func;
-
-    if (!opFunc) {
-        opFunc = OperationRegistry::getOperation(name);
-        if (!opFunc) {
-            throw std::runtime_error("Operation not found in registry: " + name);
-        }
+std::shared_ptr<Operation> OperationFactory::createOperation(const std::string& opName, const std::vector<std::string>& params) {
+    auto it = registry_.find(opName);
+    if (it != registry_.end()) {
+        return std::make_shared<Operation>(it->second, params, opName);
     }
+    throw std::runtime_error("Operation not found: " + opName);
+}
 
-    return std::make_shared<Operation>(opFunc, inputs, name);
+void OperationFactory::registerOperation(const std::string& opName, const std::function<std::string(const Node&, const std::vector<std::string>&)>& func) {
+    registry_[opName] = func;
 }

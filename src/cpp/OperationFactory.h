@@ -1,22 +1,21 @@
-// OperationFactory.h
-#ifndef OPERATIONFACTORY_H
-#define OPERATIONFACTORY_H
+#ifndef OPERATION_FACTORY_H
+#define OPERATION_FACTORY_H
 
+#include <unordered_map>
 #include <string>
-#include <vector>
-#include <memory>
 #include <functional>
-
-class Node; // 前向声明
-class Operation; // 前向声明
+#include "Operation.h"
 
 class OperationFactory {
 public:
-    // 创建操作
-    static std::shared_ptr<Operation> createOperation(
-        const std::string& name,
-        const std::vector<std::shared_ptr<Node>>& inputs,
-        const std::function<std::string(const std::vector<std::shared_ptr<Node>>&)> func = nullptr);
+    // 工厂方法：根据操作名称和参数创建 Operation
+    static std::shared_ptr<Operation> createOperation(const std::string& opName, const std::vector<std::string>& params);
+
+    // 注册操作：将操作名称与对应的函数关联
+    static void registerOperation(const std::string& opName, const std::function<std::string(const Node&, const std::vector<std::string>&)>& func);
+
+private:
+    static std::unordered_map<std::string, std::function<std::string(const Node&, const std::vector<std::string>&)>> registry_;
 };
 
-#endif // OPERATIONFACTORY_H
+#endif // OPERATION_FACTORY_H
