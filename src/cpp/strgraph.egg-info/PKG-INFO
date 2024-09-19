@@ -1,0 +1,7 @@
+Metadata-Version: 2.1
+Name: strgraph
+Version: 0.1
+Summary: String Graph Module
+Author: Your Name
+Author-email: your.email@example.com
+Requires-Dist: pybind11
