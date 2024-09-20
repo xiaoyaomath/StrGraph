@@ -6,7 +6,7 @@
 #include <vector>
 #include <memory>
 
-class Operation; // 前向声明
+class Operation;
 
 class Node {
 public:
@@ -23,12 +23,15 @@ public:
 
     void printInfo() const;
 
+    void updateOperationParams(const std::vector<int>& params);
+
+
 private:
-    std::string value_; // 节点存储的值
-    std::shared_ptr<Operation> operation_; // 节点的操作（可选）
-    std::vector<std::shared_ptr<Node>> inputNodes_; // 节点的输入节点（可选）
-    mutable bool isUpdated_; // 节点的计算状态
-    mutable bool isComputing_; // 检测是否在计算中，用于防止循环依赖
+    std::string value_; 
+    std::shared_ptr<Operation> operation_; 
+    std::vector<std::shared_ptr<Node>> inputNodes_;
+    mutable bool isUpdated_;
+    mutable bool isComputing_;
 };
 
 #endif // NODE_H

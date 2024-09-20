@@ -3,7 +3,7 @@
 
 // 构造函数，初始化操作对象，操作函数不可为空
 Operation::Operation(const std::function<std::string(const std::vector<std::string>&)>& func,
-                     const std::vector<std::string>& params,
+                     const std::vector<int>& params,
                      const std::string& name)
     : func_(func), params_(params), name_(name) {
     if (!func_) {
@@ -33,7 +33,7 @@ std::shared_ptr<Operation> Operation::clone() const {
     return std::make_shared<Operation>(func_, params_, name_);
 }
 
-void Operation::setParams(const std::vector<std::string>& params) {
+void Operation::setParams(const std::vector<int>& params) {
     params_ = params;
 }
 

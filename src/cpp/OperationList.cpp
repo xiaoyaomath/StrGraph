@@ -17,6 +17,6 @@ void registerOperations() {
 
     manager.registerOperation("concat", std::make_shared<Operation>(
         std::function<std::string(const std::vector<std::string>&)>(ConcatOperation),
-        std::vector<std::string>{}, "concat")
+        std::vector<int>{}, "concat")
     );
 }

@@ -11,20 +11,19 @@ class Node;
 class Operation {
 public:
     Operation(const std::function<std::string(const std::vector<std::string>&)>& func,
-              const std::vector<std::string>& params = {},
+              const std::vector<int>& params = {},
               const std::string& name = "");
     
     std::string compute(const std::vector<std::string>& inputStrings) const;
 
-
     std::string getName() const;
     void printInfo() const;
     std::shared_ptr<Operation> clone() const;
-    void setParams(const std::vector<std::string>& params);
+    void setParams(const std::vector<int>& params);
 
 private:
     std::string name_;
-    std::vector<std::string> params_;
+    std::vector<int> params_;
     std::function<std::string(const std::vector<std::string>&)> func_;
 };
 
