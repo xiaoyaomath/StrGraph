@@ -34,9 +34,11 @@ void OperationManager::updateOperation(const std::string& name, const std::share
     operations_[name] = op;
 }
 
-void OperationManager::listOperations() const {
-    std::cout << "Available operations:" << std::endl;
+std::vector<std::string> OperationManager::listOperations() const {
+    std::vector<std::string> operationNames;
     for (const auto& entry : operations_) {
-        std::cout << "  - " << entry.first << std::endl;
+        operationNames.push_back(entry.first);
     }
+    return operationNames;
 }
+

@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_DEFINES = -Dstrgraph_EXPORTS
 
-CXX_INCLUDES = -isystem /opt/homebrew/include -isystem /Users/xiaoyao/miniconda3/include/python3.10
+CXX_INCLUDES = -isystem /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12 -isystem /opt/homebrew/include
 
 CXX_FLAGSarm64 = -std=gnu++11 -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fPIC
 

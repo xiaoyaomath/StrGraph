@@ -14,7 +14,7 @@ public:
     void registerOperation(const std::string& name, const std::shared_ptr<Operation>& op);
     void removeOperation(const std::string& name);
     void updateOperation(const std::string& name, const std::shared_ptr<Operation>& op);
-    void listOperations() const;
+    std::vector<std::string> listOperations() const;
 
 private:
     OperationManager() = default;

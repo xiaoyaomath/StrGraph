@@ -10,11 +10,8 @@ std::string Node::getString() const {
     return value_;
 }
 
-std::string Node::getSubstring(size_t pos, size_t len) const {
-    if (pos >= value_.size()) {
-        return "";
-    }
-    return value_.substr(pos, len);
+std::vector<std::shared_ptr<Node>> Node::getInputNodes() const {
+    return inputNodes_;
 }
 
 void Node::setString(const std::string& newValue) {
@@ -67,6 +64,8 @@ std::string Node::computeString() {
 
 void Node::printInfo() const {
     std::cout << "Node Info:" << std::endl;
+    std::cout << "Node Info:" << std::endl;
+    std::cout << "  ID: " << id_ << std::endl;
     std::cout << "  Value: " << value_ << std::endl;
     if (operation_) {
         std::cout << "  Operation: " << operation_->getName() << std::endl;
@@ -89,5 +88,30 @@ void Node::updateOperationParams(const std::vector<int>& params) {
         isUpdated_ = false;
     } else {
         throw std::runtime_error("No operation is set for this node.");
+    }
+}
+
+void printIndent(int indentLevel) {
+    for (int i = 0; i < indentLevel; ++i) {
+        std::cout << "->";
+    }
+}
+
+void Node::printGraph(int indentLevel) const {
+    printIndent(indentLevel);
+    std::cout << " Node: \"" << value_ << "\"";
+
+    if (operation_) {
+        std::cout << " Operation: \"" << operation_->getName() << "\"";
+    } else {
+        std::cout << " Operation: ";
+    }
+
+    std::cout << std::endl;
+
+    for (const auto& inputNode : inputNodes_) {
+        if (inputNode) {
+            inputNode->printGraph(indentLevel + 1);  
+        }
     }
 }

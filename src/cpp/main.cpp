@@ -3,20 +3,16 @@
 #include "OperationManager.h"
 
 int main() {
-    // 注册操作
     registerOperations();
 
-    // 创建两个基础节点
     std::shared_ptr<Node> nodeA = std::make_shared<Node>("Hello");
     std::shared_ptr<Node> nodeB = std::make_shared<Node>("World");
 
-    // 输出基础节点的值，确保它们正确创建
     std::cout << "Node A: " << nodeA->getString() << std::endl;
     std::cout << "Node B: " << nodeB->getString() << std::endl;
 
-    // 获取 "concat" 操作
     OperationManager& manager = OperationManager::getInstance();
-    auto concatOperation = manager.getOperation("concat");
+    auto concatOperation = manager.getOperation("Concat");
 
     std::cout << "manager: " << std::endl;
     manager.listOperations();

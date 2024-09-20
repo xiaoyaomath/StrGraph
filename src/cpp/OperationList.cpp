@@ -2,7 +2,7 @@
 #include "OperationManager.h"
 #include "Node.h"
 
-//连接操作
+// Concatenate operation
 std::string ConcatOperation(const std::vector<std::string>& inputStrings) {
     if (inputStrings.size() < 2) {
         throw std::runtime_error("Concat operation requires at least two input nodes.");
@@ -10,13 +10,12 @@ std::string ConcatOperation(const std::vector<std::string>& inputStrings) {
     return inputStrings[0] + inputStrings[1];
 }
 
-
-// 注册所有操作
+// Register all operations
 void registerOperations() {
     auto& manager = OperationManager::getInstance();
 
-    manager.registerOperation("concat", std::make_shared<Operation>(
+    manager.registerOperation("Concat", std::make_shared<Operation>(
         std::function<std::string(const std::vector<std::string>&)>(ConcatOperation),
-        std::vector<int>{}, "concat")
+        std::vector<int>{}, "Concat")
     );
 }
