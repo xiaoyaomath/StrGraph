@@ -1,22 +1,38 @@
 #include "Node.h"
-#include "OperationList.cpp"
+#include "OperationList.h"
+#include "OperationManager.h"
 
 int main() {
-    // 注册所有操作
+    // 注册操作
     registerOperations();
 
-    // 创建节点并设置操作
-    Node node1("Hello, ");
-    node1.setOperation("concat", {"World!"});
-    std::cout << "Result: " << node1.computeString() << std::endl; // 输出: "Hello, World!"
+    // 创建两个基础节点
+    std::shared_ptr<Node> nodeA = std::make_shared<Node>("Hello");
+    std::shared_ptr<Node> nodeB = std::make_shared<Node>("World");
 
-    Node node2("  Hello  ");
-    node2.setOperation("trim");
-    std::cout << "Trimmed: " << node2.computeString() << std::endl; // 输出: "Hello"
+    // 输出基础节点的值，确保它们正确创建
+    std::cout << "Node A: " << nodeA->getString() << std::endl;
+    std::cout << "Node B: " << nodeB->getString() << std::endl;
 
-    Node node3("abcdefg");
-    node3.setOperation("slice", {"2", "3"});
-    std::cout << "Sliced: " << node3.computeString() << std::endl; // 输出: "cde"
+    // 获取 "concat" 操作
+    OperationManager& manager = OperationManager::getInstance();
+    auto concatOperation = manager.getOperation("concat");
+
+    std::cout << "manager: " << std::endl;
+    manager.listOperations();
+
+    std::cout << "concatOp: " << concatOperation->getName() << std::endl;
+
+    std::shared_ptr<Node> concatNode = std::make_shared<Node>("xyz", concatOperation, std::vector<std::shared_ptr<Node>>{nodeA, nodeB});
+
+    std::cout << "Concat Node Input A: " << nodeA->getString() << std::endl;
+    std::cout << "Concat Node Input B: " << nodeB->getString() << std::endl;
+    std::cout << "concat Node's string: " << concatNode->getString() << std::endl;
+
+    std::string result = concatNode->computeString();
+
+    std::cout << "Concatenated result: " << result << std::endl;
+    std::cout << "concat Node's new string: " << concatNode->getString() << std::endl;
 
     return 0;
 }

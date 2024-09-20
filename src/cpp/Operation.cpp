@@ -1,7 +1,8 @@
 #include "Operation.h"
-#include "Node.h"
+#include <iostream>
 
-Operation::Operation(const std::function<std::string(const Node&, const std::vector<std::string>&)>& func,
+// 构造函数，初始化操作对象，操作函数不可为空
+Operation::Operation(const std::function<std::string(const std::vector<std::string>&)>& func,
                      const std::vector<std::string>& params,
                      const std::string& name)
     : func_(func), params_(params), name_(name) {
@@ -10,17 +11,14 @@ Operation::Operation(const std::function<std::string(const Node&, const std::vec
     }
 }
 
-// 运算：根据函数和参数，输出结果字符串
-std::string Operation::compute(const Node& node) const {
-    return func_(node, params_);
+std::string Operation::compute(const std::vector<std::string>& inputStrings) const {
+    return func_(inputStrings);
 }
 
-// 获取操作名称
 std::string Operation::getName() const {
     return name_;
 }
 
-// 打印操作信息
 void Operation::printInfo() const {
     std::cout << "Operation Info:" << std::endl;
     std::cout << "  Name: " << name_ << std::endl;
@@ -31,7 +29,11 @@ void Operation::printInfo() const {
     std::cout << std::endl;
 }
 
-// 复制操作
 std::shared_ptr<Operation> Operation::clone() const {
     return std::make_shared<Operation>(func_, params_, name_);
 }
+
+void Operation::setParams(const std::vector<std::string>& params) {
+    params_ = params;
+}
+
