@@ -1,0 +1,11 @@
+Metadata-Version: 2.1
+Name: strgraph
+Version: 1.0.0
+Summary: A Python package to execute string operations using graph structure.
+Author: Your Name
+Author-email: your.email@example.com
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: C++
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

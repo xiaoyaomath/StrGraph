@@ -15,26 +15,16 @@ std::shared_ptr<Node> create_operation_node(const std::string& opName, const std
     return NodeFactory::createOperationNode(opName, inputNodes);
 }
 
-// Helper to dynamically expose operations as Python functions with custom names
+// Helper to dynamically expose operations as Python functions
 void expose_operations(py::module& m) {
     auto& manager = OperationManager::getInstance();
     auto operations = manager.listOperations();
 
-    // Custom mapping of operation names to Python function names
-    std::unordered_map<std::string, std::string> customNames = {
-        {"concat", "cc"}  // Map "concat" operation to Python function "cc"
-        // Add more custom mappings as needed
-    };
-
     for (const auto& opName : operations) {
-        std::string pythonFuncName = opName;  // Default to operation name
-        
-        // Check if there is a custom name for this operation
-        if (customNames.find(opName) != customNames.end()) {
-            pythonFuncName = customNames[opName];
-        }
+        // Use the operation's name directly as the Python function name
+        std::string pythonFuncName = opName;  
 
-        // Dynamically expose the function in Python with the appropriate name
+        // Dynamically expose the function in Python using the operation's name
         m.def(pythonFuncName.c_str(), [opName](std::shared_ptr<Node> node1, std::shared_ptr<Node> node2) {
             return create_operation_node(opName, { node1, node2 });
         });
@@ -48,6 +38,7 @@ void expose_operations(py::module& m) {
         m.attr(opVarName.c_str()) = manager.getOperation(opName);
     }
 }
+
 
 PYBIND11_MODULE(strgraph, m) {
     // Register operations first

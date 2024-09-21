@@ -1,0 +1,13 @@
+README.md
+setup.py
+/Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Node.cpp
+/Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/NodeFactory.cpp
+/Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Operation.cpp
+/Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationList.cpp
+/Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationManager.cpp
+/Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/bindings.cpp
+strgraph.egg-info/PKG-INFO
+strgraph.egg-info/SOURCES.txt
+strgraph.egg-info/dependency_links.txt
+strgraph.egg-info/not-zip-safe
+strgraph.egg-info/top_level.txt
