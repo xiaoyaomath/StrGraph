@@ -12,8 +12,8 @@ concat_op = Operations("Concat")
 concat_op.print_info()
 
 # Test concatenation operation using NodeFactory
-node1 = Node("Hello, ")
-node2 = Node("World!")
+# node1 = Node("Hello, ")
+# node2 = Node("World!")
 
 """
 # concat_node = strgraph.NodeFactory.create_operation_node("Concat", [node1, node2])
@@ -74,5 +74,7 @@ nodeab = Concat(nodea, nodeb)
 nodeabc = Concat(nodeab, nodec)
 # nodeab.compute_string()
 # nodeabc.compute_string()
+nodeabc.print_graph(0)
+nodeabc.compute_graph()
 nodeabc.print_graph(0)
 

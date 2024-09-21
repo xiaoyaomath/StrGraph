@@ -733,4 +733,7 @@ CMakeFiles/strgraph.dir/src/cpp/Node.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
   /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/OperationManager.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Operation.h
+  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Operation.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/queue \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/deque \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stack

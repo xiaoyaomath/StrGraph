@@ -1,13 +1,23 @@
 #include "Node.h"
 #include "OperationManager.h"
+#include <queue>
+#include <stack>
+
+int Node::currentID = 0;
 
 Node::Node(const std::string& value, 
     std::shared_ptr<Operation> op, 
     const std::vector< std::shared_ptr<Node> >& inputNodes)
-    : value_(value), operation_(op), inputNodes_(inputNodes), isComputing_(false), isUpdated_(true) {}
+    : value_(value), operation_(op), inputNodes_(inputNodes), isComputing_(false), isUpdated_(true) {
+        id_ = ++currentID;
+    }
 
 std::string Node::getString() const {
     return value_;
+}
+
+int Node::getId() const{
+    return id_;
 }
 
 std::vector<std::shared_ptr<Node>> Node::getInputNodes() const {
@@ -18,6 +28,7 @@ void Node::setString(const std::string& newValue) {
     value_ = newValue;
     isUpdated_ = true;
 }
+
 
 void Node::setInputNodes(const std::vector<std::shared_ptr<Node>>& inputNodes) {
     inputNodes_ = inputNodes;
@@ -62,21 +73,60 @@ std::string Node::computeString() {
     return value_;
 }
 
+void Node::computeGraph() const {
+    std::queue<std::shared_ptr<Node>> bfsQueue;
+    std::vector<std::shared_ptr<Node>> traversalOrder;
+
+    // Start BFS from the current node
+    bfsQueue.push(std::make_shared<Node>(*this));
+
+    // Perform BFS traversal
+    while (!bfsQueue.empty()) {
+        std::shared_ptr<Node> currentNode = bfsQueue.front();
+        bfsQueue.pop();
+
+        // Add the current node to the traversal order
+        traversalOrder.push_back(currentNode);
+
+        // Push all input nodes into the queue
+        for (const auto& inputNode : currentNode->getInputNodes()) {
+            if (inputNode) {
+                bfsQueue.push(inputNode);
+            }
+        }
+    }
+
+    // Print the traversal order
+    std::cout << "BFS Traversal Order: ";
+    for (const auto& node : traversalOrder) {
+        std::cout << node->getId() << ", ";
+    }
+    std::cout << std::endl;
+
+    // Reverse the traversal order
+    std::reverse(traversalOrder.begin(), traversalOrder.end());
+
+    // Compute the strings in reverse order
+    std::cout << "Computing in reverse order:" << std::endl;
+    for (const auto& node : traversalOrder) {
+        std::cout << "Computing Node " << node->getId() << ": " << node->computeString() << std::endl;
+    }
+}
+
 void Node::printInfo() const {
-    std::cout << "Node Info:" << std::endl;
-    std::cout << "Node Info:" << std::endl;
-    std::cout << "  ID: " << id_ << std::endl;
-    std::cout << "  Value: " << value_ << std::endl;
+    std::cout << "Node Info: ID: " << id_ << " : \"" << value_ << "\"";
+    
     if (operation_) {
         std::cout << "  Operation: " << operation_->getName() << std::endl;
         operation_->printInfo();
     } else {
         std::cout << "  Operation: None" << std::endl;
     }
+
     if (!inputNodes_.empty()) {
         std::cout << "  Input Nodes Values: ";
         for (const auto& inputNode : inputNodes_) {
-            std::cout << inputNode->getString() << " ";
+            std::cout << "\"" << inputNode->getString() << "\" ";
         }
         std::cout << std::endl;
     }
@@ -99,8 +149,7 @@ void printIndent(int indentLevel) {
 
 void Node::printGraph(int indentLevel) const {
     printIndent(indentLevel);
-    std::cout << " Node: \"" << value_ << "\"";
-
+    std::cout << " Node "<< id_ <<": \"" << value_ << "\"";
     if (operation_) {
         std::cout << " Operation: \"" << operation_->getName() << "\"";
     } else {

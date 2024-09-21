@@ -62,36 +62,37 @@ PYBIND11_MODULE(strgraph, m) {
         .def("clone", &Operation::clone)
         .def("set_params", &Operation::setParams);
 
-    // Bind Node class
+    // Bind Node class, now with the constructor exposed
     py::class_<Node, std::shared_ptr<Node>>(m, "Node")
         .def(py::init<const std::string&, std::shared_ptr<Operation>, const std::vector<std::shared_ptr<Node>>&>(),
             py::arg("value"), 
             py::arg("op") = nullptr, 
             py::arg("inputNodes") = std::vector<std::shared_ptr<Node>>())
-        .def("get_string", &Node::getString)
+        .def("string", &Node::getString)
         .def("input_nodes", &Node::getInputNodes)
         .def("set_string", &Node::setString)
         .def("set_input_nodes", &Node::setInputNodes)
         .def("set_operation", &Node::setOperation)
         .def("compute_string", &Node::computeString)
+        .def("compute_graph", &Node::computeGraph)
         .def("print_info", &Node::printInfo)
         .def("update_operation_params", &Node::updateOperationParams)
         .def("print_graph", &Node::printGraph);
-
-    // Bind OperationManager class
-    py::class_<OperationManager, std::shared_ptr<OperationManager>>(m, "OperationManager")
-        .def_static("get_instance", &OperationManager::getInstance, py::return_value_policy::reference)
-        .def("get_operation", &OperationManager::getOperation)
-        .def("register", &OperationManager::registerOperation)
-        .def("remove", &OperationManager::removeOperation)
-        .def("update_operation", &OperationManager::updateOperation)
-        .def("list_operations", &OperationManager::listOperations);
 
     // Bind NodeFactory class
     py::class_<NodeFactory>(m, "NodeFactory")
         .def_static("create_value_node", &NodeFactory::createValueNode)
         .def_static("create_operation_node", &NodeFactory::createOperationNode);
     
+    // Bind OperationManager class
+    py::class_<OperationManager, std::shared_ptr<OperationManager>>(m, "OperationManager")
+        .def_static("get_instance", &OperationManager::getInstance, py::return_value_policy::reference)
+        .def("get_operation", &OperationManager::getOperation)
+        .def("register_operation", &OperationManager::registerOperation)
+        .def("remove_operation", &OperationManager::removeOperation)
+        .def("update_operation", &OperationManager::updateOperation)
+        .def("list_operations", &OperationManager::listOperations);
+
     // Expose OperationManager's get_operation method as "Operation"
     m.def("Operations", [](const std::string& op_name) {
         return OperationManager::getInstance().getOperation(op_name);
