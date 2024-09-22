@@ -97,6 +97,7 @@ void Node::computeGraph() const {
     }
 
     // Print the traversal order
+    std::cout << "\n====== BFS Traversal Order ======\n";
     std::cout << "BFS Traversal Order: ";
     for (const auto& node : traversalOrder) {
         std::cout << node->getId() << ", ";
@@ -107,14 +108,15 @@ void Node::computeGraph() const {
     std::reverse(traversalOrder.begin(), traversalOrder.end());
 
     // Compute the strings in reverse order
-    std::cout << "Computing in reverse order:" << std::endl;
+    std::cout << "\n====== Computing in Reverse Order ======\n";
     for (const auto& node : traversalOrder) {
         std::cout << "Computing Node " << node->getId() << ": " << node->computeString() << std::endl;
     }
 }
 
 void Node::printInfo() const {
-    std::cout << "Node Info: ID: " << id_ << " : \"" << value_ << "\"";
+    std::cout << "\n====== Node Info ======\n";
+    std::cout << "Node " << id_ << ": \"" << value_ << "\"";
     
     if (operation_) {
         std::cout << "  Operation: " << operation_->getName() << std::endl;
@@ -148,6 +150,8 @@ void printIndent(int indentLevel) {
 }
 
 void Node::printGraph(int indentLevel) const {
+    if (indentLevel == 0){ 
+        std::cout << "\n====== Graph Node ======\n";}
     printIndent(indentLevel);
     std::cout << " Node "<< id_ <<": \"" << value_ << "\"";
     if (operation_) {

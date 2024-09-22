@@ -1,41 +1,39 @@
 CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/bindings.cpp \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/bindings.cpp \
   /opt/homebrew/include/pybind11/pybind11.h \
   /opt/homebrew/include/pybind11/detail/class.h \
   /opt/homebrew/include/pybind11/attr.h \
   /opt/homebrew/include/pybind11/detail/common.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/optional \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/variant \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/Python.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/patchlevel.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pyconfig.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pymacconfig.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdlib.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/Python.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/patchlevel.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pyconfig.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pymacconfig.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__config_site \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdlib.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/Availability.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityVersions.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityInternal.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/limits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/cdefs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_symbol_aliasing.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_posix_availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_limits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/syslimits.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/Availability.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityVersions.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/AvailabilityInternal.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_types.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/wait.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_pid_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_id_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/appleapiopts.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/signal.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_mcontext.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/machine/_structs.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/arm/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_va_list.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/types.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_int8_t.h \
@@ -48,11 +46,37 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_u_int64_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_intptr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uintptr_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_size_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_null.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctermid.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_off_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ssize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/string.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rsize_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_errno_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/strings.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/errno.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdlib.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/wait.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_pid_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_id_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/appleapiopts.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/signal.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_mcontext.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/machine/_structs.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/mach/arm/_structs.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_pthread/_pthread_attr_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigaltstack.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ucontext.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_sigset_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_size_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/resource.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdint.h \
@@ -75,26 +99,9 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ct_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rune_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wchar_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_null.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/malloc/_malloc.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_dev_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mode_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_va_list.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stdio.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctermid.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_off_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_ssize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/errno.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_errno_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/string.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_rsize_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/strings.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/unistd.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_posix_vdisable.h \
@@ -116,34 +123,10 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_uuid_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/gethostuuid.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/assert.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/__stddef_max_align_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/wchar.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mbstate_t.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/time.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_clock_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/__wctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wint_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_wctype_t.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctype.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/runetype.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pyport.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pyport.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/inttypes.h \
   /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/inttypes.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/inttypes.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits.h \
-  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/machine/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/arm/_limits.h \
-  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/syslimits.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/math.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/promote.h \
@@ -159,6 +142,9 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_cv.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_const.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__type_traits/remove_volatile.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stddef.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/__stddef_max_align_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/version \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/limits \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/type_traits \
@@ -271,6 +257,8 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__undef_macros \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/time.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_timeval64.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/time.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_clock_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/stat.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_blkcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_blksize_t.h \
@@ -279,83 +267,86 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_nlink_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_s_ifmt.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_filesec_t.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/exports.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pymacro.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pymath.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pymem.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pymem.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pytypedefs.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pybuffer.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/object.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pystats.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/object.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/objimpl.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/objimpl.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/typeslots.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pyhash.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pydebug.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/bytearrayobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/bytearrayobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/bytesobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/bytesobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/unicodeobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/unicodeobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/initconfig.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pystate.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pystate.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pyerrors.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pyerrors.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/longobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/longobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/longintrepr.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/boolobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/floatobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/floatobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/complexobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/complexobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/rangeobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/memoryobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/memoryobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/tupleobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/tupleobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/listobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/listobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/dictobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/dictobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/odictobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/enumobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/setobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/setobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/methodobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/methodobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/moduleobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/funcobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/classobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/fileobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/fileobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pycapsule.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/code.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pyframe.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pyframe.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/traceback.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/traceback.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/sliceobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/cellobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/iterobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/genobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/descrobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/descrobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/genericaliasobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/warnings.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/warnings.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/weakrefobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/weakrefobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/structseq.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/picklebufobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pytime.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/codecs.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pythread.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pythread.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/exports.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pymacro.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pymath.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pymem.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pymem.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/object.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/object.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/objimpl.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/objimpl.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/typeslots.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pyhash.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pydebug.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/bytearrayobject.h \
+  /Library/Developer/CommandLineTools/usr/lib/clang/14.0.3/include/stdarg.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/bytearrayobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/bytesobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/bytesobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/unicodeobject.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_ctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/runetype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_wint_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/wchar.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mbstate_t.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/__wctype.h \
+  /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_wctype_t.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/unicodeobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/longobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/longintrepr.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/boolobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/floatobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/complexobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/rangeobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/memoryobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/tupleobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/tupleobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/listobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/listobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/dictobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/dictobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/odictobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/enumobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/setobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/methodobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/methodobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/moduleobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/funcobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/classobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/fileobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/fileobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pycapsule.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/code.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/code.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pyframe.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/traceback.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/traceback.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/sliceobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cellobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/iterobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/initconfig.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/genobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pystate.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pystate.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/abstract.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/abstract.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/descrobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/genericaliasobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/warnings.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/weakrefobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/structseq.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/namespaceobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/picklebufobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pytime.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/codecs.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pyerrors.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pyerrors.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pythread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/sched.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/pthread_impl.h \
@@ -371,35 +362,33 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/pthread/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/qos.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_mach_port_t.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/context.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/modsupport.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/modsupport.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/compile.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/compile.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pythonrun.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pythonrun.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pylifecycle.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pylifecycle.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/ceval.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/ceval.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/sysmodule.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/sysmodule.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/osmodule.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/intrcheck.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/import.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/import.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/abstract.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/abstract.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/bltinmodule.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pyctype.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pystrtod.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/pystrcmp.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/fileutils.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/fileutils.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/pyfpe.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/tracemalloc.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/frameobject.h \
-  /opt/homebrew/opt/python@3.12/Frameworks/Python.framework/Versions/3.12/include/python3.12/cpython/frameobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/context.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/modsupport.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/compile.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/compile.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pythonrun.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pythonrun.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pylifecycle.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pylifecycle.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/ceval.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/ceval.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/sysmodule.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/sysmodule.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/osmodule.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/intrcheck.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/import.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/import.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/bltinmodule.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/eval.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pyctype.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pystrtod.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/pystrcmp.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/fileutils.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/fileutils.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/pyfpe.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/tracemalloc.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/frameobject.h \
+  /Users/xiaoyao/miniconda3/include/python3.10/cpython/frameobject.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/cstring \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/exception \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__memory/addressof.h \
@@ -890,10 +879,10 @@ CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/set \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/valarray \
   /opt/homebrew/include/pybind11/functional.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Node.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Node.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/istream \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Operation.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/OperationManager.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/NodeFactory.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/OperationList.h
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Operation.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationManager.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/NodeFactory.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationList.h

@@ -1,4 +1,4 @@
-# Install script for directory: /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph
+# Install script for directory: /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -52,6 +52,6 @@ endif()
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-  file(WRITE "/Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/build/${CMAKE_INSTALL_MANIFEST}"
+  file(WRITE "/Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

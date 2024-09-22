@@ -1,6 +1,6 @@
 CMakeFiles/strgraph.dir/src/cpp/OperationManager.cpp.o: \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/OperationManager.cpp \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/OperationManager.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationManager.cpp \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationManager.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/comp.h \
@@ -677,7 +677,7 @@ CMakeFiles/strgraph.dir/src/cpp/OperationManager.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Operation.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Operation.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale \

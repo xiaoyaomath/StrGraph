@@ -1,23 +1,7 @@
-from setuptools import setup, Extension
-from setuptools.command.build_ext import build_ext
+# File: src/python/setup.py
+from setuptools import setup
+from pybind11.setup_helpers import Pybind11Extension, build_ext
 import os
-import pybind11
-
-class CustomBuildExtCommand(build_ext):
-    def run(self):
-        # Ensure that the build directory exists
-        if not os.path.exists(self.build_temp):
-            os.makedirs(self.build_temp)
-        # Create directories for each source file
-        for ext in self.extensions:
-            for source in ext.sources:
-                # Get the directory of the source file relative to the current directory
-                source_dir = os.path.dirname(os.path.abspath(source))
-                relative_dir = os.path.relpath(source_dir, os.getcwd())
-                build_dir = os.path.join(self.build_temp, relative_dir)
-                if not os.path.exists(build_dir):
-                    os.makedirs(build_dir)
-        super().run()
 
 # Get the directory where setup.py is located
 this_dir = os.path.abspath(os.path.dirname(__file__))
@@ -34,18 +18,11 @@ cpp_sources = [
 ]
 
 ext_modules = [
-    Extension(
-        name='strgraph',  # Name of the Python module
-        sources=cpp_sources,
-        include_dirs=[
-            cpp_dir,  # Include directory for header files
-            pybind11.get_include(),  # pybind11 include directories
-            pybind11.get_include(user=True)
-        ],
-        language='c++',
-        # Add '-std=c++11' to compile and link arguments
-        extra_compile_args=['-O3', '-std=c++11'],
-        extra_link_args=['-std=c++11'],
+    Pybind11Extension(
+        "strgraph",
+        cpp_sources,
+        include_dirs=[cpp_dir],  # Include directory for header files
+        cxx_std=11,
     )
 ]
 
@@ -59,14 +36,14 @@ if os.path.exists(readme_path):
 # Configure the setup
 setup(
     name='strgraph',
-    version='1.0.0',
-    author='Your Name',
-    author_email='your.email@example.com',
+    version='1.0.1',
+    author='Yao Xiao',
+    author_email='xiaoyaoin1980@gmail.com',
     description='A Python package to execute string operations using graph structure.',
     long_description=long_description,
     long_description_content_type='text/markdown',
     ext_modules=ext_modules,
-    cmdclass={'build_ext': CustomBuildExtCommand},
+    cmdclass={'build_ext': build_ext},
     zip_safe=False,
     classifiers=[
         'Programming Language :: Python :: 3',

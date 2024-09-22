@@ -1,6 +1,6 @@
 CMakeFiles/strgraph.dir/src/cpp/Operation.cpp.o: \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Operation.cpp \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Operation.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Operation.cpp \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Operation.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/string \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/max.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/comp.h \

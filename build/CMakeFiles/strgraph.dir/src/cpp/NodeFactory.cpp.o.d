@@ -1,6 +1,6 @@
 CMakeFiles/strgraph.dir/src/cpp/NodeFactory.cpp.o: \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/NodeFactory.cpp \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/NodeFactory.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/NodeFactory.cpp \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/NodeFactory.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/memory \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/copy.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__algorithm/unwrap_iter.h \
@@ -677,7 +677,7 @@ CMakeFiles/strgraph.dir/src/cpp/NodeFactory.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/pointer_to_binary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/pointer_to_unary_function.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__functional/unary_negate.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Node.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Node.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/iostream \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/ios \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__locale \
@@ -733,5 +733,5 @@ CMakeFiles/strgraph.dir/src/cpp/NodeFactory.cpp.o: \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/sys/_types/_fsfilcnt_t.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/_types/_nl_item.h \
   /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk/usr/include/c++/v1/__bsd_locale_defaults.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/OperationManager.h \
-  /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/Operation.h
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationManager.h \
+  /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Operation.h

@@ -51,7 +51,9 @@ PYBIND11_MODULE(strgraph, m) {
         .def("get_name", &Operation::getName)
         .def("print_info", &Operation::printInfo)
         .def("clone", &Operation::clone)
-        .def("set_params", &Operation::setParams);
+        .def("set_params", &Operation::setParams)
+        .def("set_name", &Operation::setName)
+        .def("set_func", &Operation::setFunc);
 
     // Bind Node class, now with the constructor exposed
     py::class_<Node, std::shared_ptr<Node>>(m, "Node")

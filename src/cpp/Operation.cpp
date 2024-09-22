@@ -37,3 +37,15 @@ std::shared_ptr<Operation> Operation::clone() const {
 void Operation::setParams(const std::vector<int>& params) {
     params_ = params;
 }
+
+void Operation::setName(const std::string& name) {
+    name_ = name;
+}
+
+void Operation::setFunc(const std::function<std::string(const std::vector<std::string>&)>& func) {
+    if (!func) {
+        throw std::runtime_error("Operation function cannot be null.");
+    }
+    func_ = func;
+}
+

@@ -20,6 +20,9 @@ public:
     void printInfo() const;
     std::shared_ptr<Operation> clone() const;
     void setParams(const std::vector<int>& params);
+    void setName(const std::string& name);
+    void setFunc(const std::function<std::string(const std::vector<std::string>&)>& func);
+
 
 private:
     std::string name_;

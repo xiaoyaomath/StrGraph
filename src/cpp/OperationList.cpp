@@ -11,13 +11,21 @@ std::string ConcatOperation(const std::vector<std::string>& inputStrings) {
 }
 
 // Slice operation
-std::string SliceOperation(const std::vector<std::string>& inputStrings) {
+std::string SliceOperation(const std::vector<std::string>& inputStrings, const std::vector<int>& params) {
     if (inputStrings.size() < 1) {
-        throw std::runtime_error("Slice operation requires at least one input node.");
+        throw std::runtime_error("Slice operation requires at least one input string.");
     }
-    // Assuming params[0] = start, params[1] = end
-    int start = std::stoi(inputStrings[1]);
-    int end = std::stoi(inputStrings[2]);
+    if (params.size() < 2) {
+        throw std::runtime_error("Slice operation requires start and end parameters.");
+    }
+    
+    int start = params[0];  // Start index from params
+    int end = params[1];    // End index from params
+    
+    if (start < 0 || end > inputStrings[0].size() || start >= end) {
+        throw std::runtime_error("Invalid slice indices.");
+    }
+    
     return inputStrings[0].substr(start, end - start);
 }
 
@@ -32,17 +40,24 @@ std::string ReverseOperation(const std::vector<std::string>& inputStrings) {
 }
 
 // Repeat operation
-std::string RepeatOperation(const std::vector<std::string>& inputStrings) {
-    if (inputStrings.size() != 2) {
-        throw std::runtime_error("Repeat operation requires two input nodes (string and repetition count).");
+std::string RepeatOperation(const std::vector<std::string>& inputStrings, const std::vector<int>& params) {
+    if (inputStrings.size() != 1) {
+        throw std::runtime_error("Repeat operation requires one input node (the string to repeat).");
     }
-    int count = std::stoi(inputStrings[1]);
+    if (params.size() != 1) {
+        throw std::runtime_error("Repeat operation requires one parameter (the repetition count).");
+    }
+
+    int count = params[0];  // Repetition count from params
     std::string result;
+
     for (int i = 0; i < count; ++i) {
         result += inputStrings[0];
     }
+
     return result;
 }
+
 
 // Trim operation
 std::string TrimOperation(const std::vector<std::string>& inputStrings) {
@@ -60,18 +75,25 @@ std::string TrimOperation(const std::vector<std::string>& inputStrings) {
 }
 
 // Insert operation
-std::string InsertOperation(const std::vector<std::string>& inputStrings) {
-    if (inputStrings.size() != 3) {
-        throw std::runtime_error("Insert operation requires three input nodes (string, position, and substring).");
+std::string InsertOperation(const std::vector<std::string>& inputStrings, const std::vector<int>& params) {
+    if (inputStrings.size() != 2) {
+        throw std::runtime_error("Insert operation requires two input nodes (string and substring to insert).");
     }
+    if (params.size() != 1) {
+        throw std::runtime_error("Insert operation requires exactly one parameter (the insertion position).");
+    }
+    
     std::string original = inputStrings[0];
-    int pos = std::stoi(inputStrings[1]);
-    std::string toInsert = inputStrings[2];
+    std::string toInsert = inputStrings[1];
+    int pos = params[0];  // Insertion position from params
+
     if (pos < 0 || pos > original.size()) {
         throw std::runtime_error("Insert position is out of bounds.");
     }
+
     return original.insert(pos, toInsert);
 }
+
 
 // Replace operation
 std::string ReplaceOperation(const std::vector<std::string>& inputStrings) {
@@ -133,9 +155,12 @@ void registerOperations() {
     );
 
     manager.registerOperation("Slice", std::make_shared<Operation>(
-        std::function<std::string(const std::vector<std::string>&)>(SliceOperation),
-        std::vector<int>{}, "Slice")
+    [params = std::vector<int>{}](const std::vector<std::string>& inputStrings) {
+        return SliceOperation(inputStrings, params);
+    },
+    std::vector<int>{}, "Slice")
     );
+
 
     manager.registerOperation("Reverse", std::make_shared<Operation>(
         std::function<std::string(const std::vector<std::string>&)>(ReverseOperation),
@@ -143,9 +168,12 @@ void registerOperations() {
     );
 
     manager.registerOperation("Repeat", std::make_shared<Operation>(
-        std::function<std::string(const std::vector<std::string>&)>(RepeatOperation),
-        std::vector<int>{}, "Repeat")
+    [params = std::vector<int>{}](const std::vector<std::string>& inputStrings) {
+        return RepeatOperation(inputStrings, params);
+    },
+    std::vector<int>{}, "Repeat")
     );
+
 
     manager.registerOperation("Trim", std::make_shared<Operation>(
         std::function<std::string(const std::vector<std::string>&)>(TrimOperation),
@@ -153,8 +181,10 @@ void registerOperations() {
     );
 
     manager.registerOperation("Insert", std::make_shared<Operation>(
-        std::function<std::string(const std::vector<std::string>&)>(InsertOperation),
-        std::vector<int>{}, "Insert")
+    [params = std::vector<int>{}](const std::vector<std::string>& inputStrings) {
+        return InsertOperation(inputStrings, params);
+    },
+    std::vector<int>{}, "Insert")
     );
 
     manager.registerOperation("Replace", std::make_shared<Operation>(
@@ -163,9 +193,10 @@ void registerOperations() {
     );
 
     manager.registerOperation("ReplaceAll", std::make_shared<Operation>(
-        std::function<std::string(const std::vector<std::string>&)>(ReplaceAllOperation),
-        std::vector<int>{}, "ReplaceAll")
+    std::function<std::string(const std::vector<std::string>&)>(ReplaceAllOperation),
+    std::vector<int>{}, "ReplaceAll")
     );
+
 
     manager.registerOperation("Delete", std::make_shared<Operation>(
         std::function<std::string(const std::vector<std::string>&)>(DeleteOperation),

@@ -1,4 +1,5 @@
 README.md
+pyproject.toml
 setup.py
 /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Node.cpp
 /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/NodeFactory.cpp

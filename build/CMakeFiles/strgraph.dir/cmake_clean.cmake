@@ -11,7 +11,7 @@ file(REMOVE_RECURSE
   "CMakeFiles/strgraph.dir/src/cpp/OperationManager.cpp.o.d"
   "CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o"
   "CMakeFiles/strgraph.dir/src/cpp/bindings.cpp.o.d"
-  "strgraph.cpython-312-darwin.so"
+  "strgraph.cpython-310-darwin.so"
   "strgraph.pdb"
 )
 
