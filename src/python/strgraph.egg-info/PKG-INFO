@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: strgraph
-Version: 1.0.1
+Version: 1.0.3
 Summary: A Python package to execute string operations using graph structure.
 Author: Yao Xiao
 Author-email: xiaoyaoin1980@gmail.com

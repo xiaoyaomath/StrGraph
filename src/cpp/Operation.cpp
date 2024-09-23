@@ -2,8 +2,7 @@
 #include <iostream>
 #include <algorithm>
 
-// 构造函数，初始化操作对象，操作函数不可为空
-Operation::Operation(const std::function<std::string(const std::vector<std::string>&)>& func,
+Operation::Operation(const std::function<std::string(const std::vector<std::string>&, const std::vector<int>&)>& func,
                      const std::vector<int>& params,
                      const std::string& name)
     : func_(func), params_(params), name_(name) {
@@ -13,11 +12,16 @@ Operation::Operation(const std::function<std::string(const std::vector<std::stri
 }
 
 std::string Operation::compute(const std::vector<std::string>& inputStrings) const {
-    return func_(inputStrings);
+    return func_(inputStrings, params_);
 }
+
 
 std::string Operation::getName() const {
     return name_;
+}
+
+std::vector<int> Operation::getParams() const {
+    return params_;
 }
 
 void Operation::printInfo() const {
@@ -42,7 +46,7 @@ void Operation::setName(const std::string& name) {
     name_ = name;
 }
 
-void Operation::setFunc(const std::function<std::string(const std::vector<std::string>&)>& func) {
+void Operation::setFunc(const std::function<std::string(const std::vector<std::string>&, const std::vector<int>&)>& func) {
     if (!func) {
         throw std::runtime_error("Operation function cannot be null.");
     }

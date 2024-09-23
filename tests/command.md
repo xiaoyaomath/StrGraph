@@ -5,22 +5,18 @@ g++ -std=c++14 -I /Users/xiaoyao/googletest/googletest/include -L /Users/xiaoyao
 
 g++ -std=c++14 \
     -I /Users/xiaoyao/googletest/googletest/include \
-    -I /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp \
+    -I /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp \
     -L /Users/xiaoyao/googletest/build/lib \
     -lgtest -lgtest_main -pthread \
-    /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/tests/cpp/nodeTest.cpp \
-    /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/node.cpp \
-    /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/twoStringOperations.cpp \
-    -o nodeTest
+    /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/tests/cpp/TestNode.cpp \
+    /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Node.cpp \
+    /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/Operation.cpp \
+    /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/NodeFactory.cpp \
+    /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationManager.cpp \
+    /Users/xiaoyao/Documents/CS/0_projects/06/StrGraph/src/cpp/OperationList.cpp \
+    -o TestNode
 
-g++ -std=c++14 \
-    -I /Users/xiaoyao/googletest/googletest/include \
-    -I /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp \
-    -L /Users/xiaoyao/googletest/build/lib \
-    -lgtest -lgtest_main -pthread \
-    /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/tests/cpp/nodeTest.cpp \
-    /Users/xiaoyao/Documents/CS/0_项目管理/06/StrGraph/src/cpp/node.cpp \
-    -o nodeTest
+
 
 
 

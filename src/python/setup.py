@@ -36,7 +36,7 @@ if os.path.exists(readme_path):
 # Configure the setup
 setup(
     name='strgraph',
-    version='1.0.1',
+    version='1.0.3',
     author='Yao Xiao',
     author_email='xiaoyaoin1980@gmail.com',
     description='A Python package to execute string operations using graph structure.',

@@ -25,9 +25,14 @@ void expose_operations(py::module& m) {
         std::string pythonFuncName = opName;  
 
         // Dynamically expose the function in Python using the operation's name
-        m.def(pythonFuncName.c_str(), [opName](std::shared_ptr<Node> node1, std::shared_ptr<Node> node2) {
-            return create_operation_node(opName, { node1, node2 });
-        });
+        m.def(pythonFuncName.c_str(), [opName](const std::vector<std::shared_ptr<Node>>& nodes, const std::vector<int>& params = {}) {
+            auto operationNode = create_operation_node(opName, nodes);
+            if (!params.empty()) {
+                operationNode->updateOperationParams(params);
+            }
+            return operationNode;
+        }, py::arg("nodes"), py::arg("params") = std::vector<int>{});
+
 
         // Expose the operation object directly in Python using the lower-case operation name + "_op"
         std::string opVarName = opName;
@@ -46,7 +51,7 @@ PYBIND11_MODULE(strgraph, m) {
 
     // Bind Operation class
     py::class_<Operation, std::shared_ptr<Operation>>(m, "Operation")
-        .def(py::init<const std::function<std::string(const std::vector<std::string>&)>&, const std::vector<int>&, const std::string&>())
+        .def(py::init<const std::function<std::string(const std::vector<std::string>&, const std::vector<int>&)>&, const std::vector<int>&, const std::string&>())
         .def("compute", &Operation::compute)
         .def("get_name", &Operation::getName)
         .def("print_info", &Operation::printInfo)
